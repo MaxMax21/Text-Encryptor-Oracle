@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    background-color: #F3F5FC;
+}
+
+main {
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 120px 680px 400px;
+    gap: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    height: 48px;
+    margin-top: 40px;
+
+}
+
+.center-page {
+    margin-top: 168px;
+}
+
+.center-page>input {
+    width: 577px;
+    padding:0;
+    background-color: #F3F5FC;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #0A3871;
+
+}
+
+.center-page>input::placeholder {
+    color: #0A3871;
+}
+
+.message-warning {
+    margin-top: 635px;
+    display: flex;
+    gap: 8px;
+}
+
+.message-warning>img {
+    width: 16px;
+    height: 16px;
+}
+
+.message-warning>p {
+    margin:0;
+    width: 205px;
+    height: 18px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+}
+
+.buttons {
+    margin-top: 16px;
+    margin-bottom: 72px;
+    display: flex;
+    gap: 8px;
+}
+
+.encrypt {
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    padding: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFF;
+}
+
+.decrypt {
+    background: #D8DFE8;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+
+.show-message {
+    margin-top: 40px;
+    width: 400px;
+    height: 944px;
+    background: #FFFFFF;
+    box-shadow:0 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.show-message>img {
+    margin: 243px 32px 32px 32px;
+}
+
+.show-message>p {
+    width: 336px;
+    height: 58px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 32px;
+    text-align: center;
+    color: #343A40;
+}
+
+.show-message>input {
+    width: 336px;
+    height: 48px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    text-align: center;
+    margin-left: 32px;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #495057;
+}
+
+.show-message>input::placeholder {
+
+    color: #495057;
+}
