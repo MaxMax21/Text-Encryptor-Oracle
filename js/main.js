@@ -7,7 +7,7 @@ function encrypt() {
     var text_encrypt = text_encrypt.replace(/o/igm, "ober");
     var text_encrypt = text_encrypt.replace(/u/igm, "ufat");
 
-    document.getElementById("card").style.display = "none";
+    document.getElementById("area-message").style.display = "none";
     document.getElementById("show-text").style.display = "flex";
     document.getElementById("text-encrypt").innerHTML = text_encrypt;
 
@@ -22,7 +22,7 @@ function decrypt(){
     var text_encrypt = text_encrypt.replace(/ober/igm, "o");
     var text_encrypt = text_encrypt.replace(/ufat/igm, "u");
 
-    document.getElementById("card").style.display = "none";
+    document.getElementById("area-message").style.display = "none";
     document.getElementById("show-text").style.display = "flex";
     document.getElementById("text-encrypt").innerHTML = text_encrypt;
 

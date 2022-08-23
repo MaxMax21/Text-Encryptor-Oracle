@@ -14,40 +14,41 @@
 </head>
 
 <body>
-    <main>
-        <div class="container">
-            <!-- Logo -->
-            <div class="logo">
-                <img src="img/logo.png" alt="">
+    <div class="container">
+        <!-- Logo -->
+        <header class="header">
+            <div class="logo"><a href="/">
+                <img src="img/logo.png" alt=""></a>
             </div>
-            <!-- Section Center -->
-            <div class="center-page">
-                <input type="text" name="" id="input_text" placeholder="Ingrese el texto aqui">
+        </header>
+
+        <!-- Encrypted Section -->
+        <main class="main">
+            <input type="text" name="" id="input_text" placeholder="Ingrese el texto aqui">
+            <div class="encryption-buttons">
                 <div class="message-warning">
-                    <img src="img/icon-warning.png" alt="">
+                    <img src="img/icon-warning.png">
                     <p>
                         Solo letras minúsculas y sin acentos
                     </p>
                 </div>
                 <div class="buttons">
-                    <div>
-                        <button class="encrypt" onclick="encrypt()">
-                            Encriptar
-                        </button>
-                    </div>
-                    <div>
-                        <button class="decrypt" onclick="decrypt()">
-                            Desencriptar
-                        </button>
-                    </div>
+                    <button class="encrypt" onclick="encrypt()">
+                        Encriptar
+                    </button>
+                    <button class="decrypt" onclick="decrypt()">
+                        Desencriptar
+                    </button>
                 </div>
             </div>
-            <!-- Show Message -->
-            <div class="show-message">
-                <div id="card">
+        </main>
+
+        <!-- Show Message -->
+        <aside class="sidebar">
+                <div id="area-message">
                     <img src="img/find.png">
-                    <p>Ningún mensaje fue encontrado</p>
-                    <input type="text" disabled placeholder="Ingresa el texto que desees encriptar o desencriptar.">
+                    <p class="not-found">Ningún mensaje fue encontrado</p>
+                    <p class="text-message">Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>
                 <div id="show-text">
                     <textarea id="text-encrypt"></textarea>
@@ -55,9 +56,9 @@
                         Copiar
                     </button>
                 </div>
-            </div>
-        </div>
-    </main>
+        </aside>
+    </div>
+
 </body>
 
 </html>
